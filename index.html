@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptocurrency Tracker Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💰 Crypto Tracker</h1>
+      <p>Track your favorite cryptocurrencies in real-time</p>
+    </header>
+
+    <div class="dashboard">
+      <div class="card crypto-card" id="btc-card">
+        <div class="crypto-info">
+          <h3>Bitcoin (BTC)</h3>
+          <p>Market Cap: $1.2T</p>
+        </div>
+        <div class="crypto-price">
+          <div class="price">$65,000</div>
+          <div class="change positive">+2.5%</div>
+        </div>
+      </div>
+
+      <div class="card crypto-card" id="eth-card">
+        <div class="crypto-info">
+          <h3>Ethereum (ETH)</h3>
+          <p>Market Cap: $380B</p>
+        </div>
+        <div class="crypto-price">
+          <div class="price">$3,200</div>
+          <div class="change negative">-1.2%</div>
+        </div>
+      </div>
+
+      <div class="card crypto-card" id="bnb-card">
+        <div class="crypto-info">
+          <h3>Binance Coin (BNB)</h3>
+          <p>Market Cap: $54B</p>
+        </div>
+        <div class="crypto-price">
+          <div class="price">$350</div>
+          <div class="change positive">+1.8%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card portfolio-summary">
+      <h2>📈 Portfolio Summary</h2>
+      <div class="portfolio-value">$100,000</div>
+      <div class="portfolio-change">+$5,000 (5.2%) Today</div>
+    </div>
+
+    <div class="chart-section">
+      <div class="card">
+        <h2>Price Trends (Last 7 Days)</h2>
+        <div class="chart-container">
+          <canvas id="priceChart"></canvas>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Market Cap Distribution</h2>
+        <div class="chart-container">
+          <canvas id="pieChart"></canvas>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Trading Volume</h2>
+        <div class="chart-container">
+          <canvas id="barChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
